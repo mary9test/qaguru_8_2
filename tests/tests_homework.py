@@ -9,3 +9,4 @@ def test_search_google(browser_management):
 def test_search_not_found(browser_management):
    browser.element('[name="q"]').should(be.blank).type('0000000jjfdss').press_enter()
    browser.element('#result-stats').should(have.text('Результатов: примерно 0'))
+   print('Результаты не найдены')

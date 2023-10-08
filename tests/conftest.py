@@ -1,7 +1,7 @@
 import pytest
 from selene import browser
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def browser_management():
    browser.config.window_width = 1280
    browser.config.window_height = 720
